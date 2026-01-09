@@ -26,12 +26,15 @@
         <!-- Intro Section -->
         <header class="flex flex-col md:flex-row items-center md:items-start gap-12 fade-in pb-12">
             <!-- Profile Image (Square with Rounded Corners) -->
-            <div class="relative shrink-0 group">
-                <div
-                    class="absolute -inset-1 bg-gradient-to-tr from-accent to-purple-600 rounded-3xl blur opacity-20 group-hover:opacity-60 transition duration-1000">
+            <div class="flex flex-col items-center gap-4 shrink-0">
+                <div class="relative group">
+                    <div
+                        class="absolute -inset-1 bg-gradient-to-tr from-accent to-purple-600 rounded-3xl blur opacity-20 group-hover:opacity-60 transition duration-1000">
+                    </div>
+                    <img src="assets/artwork/profile.jpg" data-alt-src="assets/artwork/profile-reveal.jpg" alt="Profile"
+                        class="business-card-img relative w-40 h-40 md:w-56 md:h-56 object-cover rounded-3xl transition duration-500 z-10 border-4 border-[#111] cursor-pointer hover:scale-100">
                 </div>
-                <img src="assets/artwork/profile.jpg" data-alt-src="assets/artwork/profile-reveal.jpg" alt="Profile"
-                    class="business-card-img relative w-40 h-40 md:w-56 md:h-56 object-cover rounded-3xl transition duration-500 z-10 border-4 border-[#111] cursor-pointer">
+                <span class="text-sm font-mono text-slate-500">(click to flip)</span>
             </div>
 
             <!-- Text Content -->
