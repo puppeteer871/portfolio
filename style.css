@@ -1,0 +1,72 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #050505;
+    color: #e2e8f0;
+    /* Artistic Ambient Background instead of Tech Grid */
+    background-image:
+        radial-gradient(circle at 15% 50%, rgba(76, 29, 149, 0.15), transparent 40%),
+        radial-gradient(circle at 85% 30%, rgba(255, 0, 0, 0.08), transparent 40%);
+    background-attachment: fixed;
+}
+
+/* Subtle Texture */
+.noise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 50;
+    opacity: 0.03;
+    /* Very subtle grain */
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJub2lzZSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuNjUiIG51bWJlck9mVGl0bGVzPSIzIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsdGVyPSJ1cmwoI25vaXNlKSIgb3BhY2l0eT0iMSIvPjwvc3ZnPg==');
+}
+
+/* Marquee Animation */
+.marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Hover Reveal */
+.hover-reveal img {
+    transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hover-reveal:hover img {
+    transform: scale(1.05);
+}
+
+/* Smooth rounded scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
