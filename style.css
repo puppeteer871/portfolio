@@ -1,11 +1,29 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+div {
+    font-family: 'Satoshi', sans-serif !important;
+}
+
 body {
-    font-family: 'Space Grotesk', sans-serif;
     background-color: #050505;
     color: #e2e8f0;
-    /* Artistic Ambient Background instead of Tech Grid */
+    /* Artistic Ambient Background with Brand Colours */
     background-image:
-        radial-gradient(circle at 15% 50%, rgba(76, 29, 149, 0.15), transparent 40%),
-        radial-gradient(circle at 85% 30%, rgba(255, 0, 0, 0.08), transparent 40%);
+        radial-gradient(circle at 15% 50%, rgba(69, 32, 107, 0.4), transparent 50%),
+        /* #45206B */
+        radial-gradient(circle at 85% 30%, rgba(193, 18, 31, 0.3), transparent 50%),
+        /* #C1121F */
+        linear-gradient(to right, rgba(245, 245, 245, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(245, 245, 245, 0.03) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 25px 25px, 25px 25px;
     background-attachment: fixed;
 }
 
@@ -63,10 +81,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #333;
+    background: #45206B;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #C1121F;
 }

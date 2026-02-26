@@ -9,11 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 this.dataset.originalSrc = this.src;
             }
 
-            // Swap sources
-            if (this.src === this.dataset.originalSrc) {
-                this.src = this.dataset.altSrc;
-            } else {
-                this.src = this.dataset.originalSrc;
+            // Swap sources if altSrc exists
+            if (this.dataset.altSrc) {
+                if (this.src === this.dataset.originalSrc) {
+                    this.src = this.dataset.altSrc;
+                } else {
+                    this.src = this.dataset.originalSrc;
+                }
             }
         });
     });
@@ -23,12 +25,15 @@ tailwind.config = {
     theme: {
         extend: {
             fontFamily: {
-                display: ['Syne', 'sans-serif'],
-                body: ['Space Grotesk', 'sans-serif'],
+                sans: ['Satoshi', 'sans-serif'],
+                display: ['Satoshi', 'sans-serif'],
+                body: ['Satoshi', 'sans-serif'],
+                mono: ['Satoshi', 'monospace'],
             },
             colors: {
                 dark: '#0a0a0a',
-                accent: '#ff0000', /* Red */
+                accent: '#C1121F', /* Brand Secondary Red */
+                primary: '#45206B', /* Brand Primary Purple */
                 secondary: '#bfb8e6', /* Soft Lavender for contrast */
             },
         }
