@@ -13,18 +13,8 @@ div {
 }
 
 body {
-    background-color: #050505;
-    color: #e2e8f0;
-    /* Artistic Ambient Background with Brand Colours */
-    background-image:
-        radial-gradient(circle at 15% 50%, rgba(69, 32, 107, 0.4), transparent 50%),
-        /* #45206B */
-        radial-gradient(circle at 85% 30%, rgba(193, 18, 31, 0.3), transparent 50%),
-        /* #C1121F */
-        linear-gradient(to right, rgba(245, 245, 245, 0.03) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(245, 245, 245, 0.03) 1px, transparent 1px);
-    background-size: 100% 100%, 100% 100%, 25px 25px, 25px 25px;
-    background-attachment: fixed;
+    background-color: #f5f5f5;
+    color: #323232;
 }
 
 /* Subtle Texture */
@@ -68,8 +58,10 @@ body {
 }
 
 .hover-reveal:hover img {
-    transform: scale(1.02);
+    /* transform: scale(1.02); Removed to prevent zoom */
 }
+
+/* Cleaned up procedural bricks */
 
 /* Smooth rounded scrollbar */
 ::-webkit-scrollbar {
@@ -77,7 +69,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #050505;
+    background: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {

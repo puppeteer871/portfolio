@@ -31,10 +31,11 @@ tailwind.config = {
                 mono: ['Satoshi', 'monospace'],
             },
             colors: {
-                dark: '#0a0a0a',
-                accent: '#C1121F', /* Brand Secondary Red */
-                primary: '#45206B', /* Brand Primary Purple */
-                secondary: '#bfb8e6', /* Soft Lavender for contrast */
+                dark: '#323232',
+                light: '#f5f5f5',
+                accent: '#C1121F', 
+                primary: '#45206B', 
+                secondary: '#C1121F', 
             },
         }
     }

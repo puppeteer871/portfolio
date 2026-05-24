@@ -12,114 +12,127 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="antialiased selection:bg-[#C1121F] selection:text-[#f5f5f5]">
+<body class="antialiased selection:bg-accent selection:text-white text-dark" style="background-image: url('assets/backgrounds/Frame 1.jpg'), url('assets/backgrounds/Frame 2.jpg'); background-size: auto, auto; background-repeat: no-repeat, repeat-y; background-position: top center, top center; background-color: #f5f5f5;">
 
     <div class="noise"></div>
 
-    <!-- Main Container -->
-    <main class="max-w-5xl mx-auto px-6 py-8 md:py-24 flex flex-col gap-16 md:gap-24 relative z-10">
+    <!-- Wrapper 1: Hero Section -->
+    <div class="w-full relative overflow-hidden z-20 h-[850px] flex flex-col justify-center">
+        <main class="max-w-5xl w-full mx-auto px-6 flex flex-col gap-16 relative z-10">
 
-        <!-- Intro Section -->
-        <header class="flex flex-col md:flex-row items-center md:items-start gap-12 fade-in pb-12">
-            <!-- Profile Image (Square with Rounded Corners) -->
-            <div class="flex flex-col items-center gap-4 shrink-0">
-                <div class="relative group">
-                    <img src="assets/artwork/profile.jpg" alt="Profile"
-                        class="relative w-40 h-40 md:w-56 md:h-56 object-cover rounded-3xl transition duration-500 z-10 hover:scale-105">
-                </div>
-            </div>
-
-            <!-- Text Content -->
-            <div class="space-y-8 text-center md:text-left pt-4">
-                <div>
-                    <div
-                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-md mb-4">
-                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                        <span class="font-mono text-xs text-slate-300 tracking-wide uppercase">Open for Work</span>
+        <!-- Intro Section (Unified Box) -->
+        <div class="bg-primary/95 backdrop-blur-md border border-white/10 rounded-[2rem] md:rounded-[3rem] p-6 md:p-[25px] shadow-2xl w-full max-w-[800px] mx-auto">
+            <div class="flex flex-col gap-8 md:gap-10 fade-in">
+                
+                <!-- Top Row: Photo & Heading -->
+                <div class="flex flex-col md:flex-row items-center md:items-center gap-6 md:gap-10">
+                    <!-- Left: Profile Image -->
+                    <div class="shrink-0">
+                        <div class="relative group">
+                            <img src="assets/artwork/profile.jpg" alt="Profile"
+                                class="relative w-48 h-48 md:w-56 md:h-56 object-cover rounded-[2rem] md:rounded-[2.5rem] transition duration-500 z-10 hover:scale-105 shadow-xl">
+                        </div>
                     </div>
-                    <h1
-                        class="font-display text-[11vw] sm:text-7xl font-bold leading-[0.9] text-[#f5f5f5] text-center tracking-normal md:tracking-widest mix-blend-overlay opacity-90 break-words width-full">
-                        PUPPETEER<br>CREATIONS
-                    </h1>
-                </div>
-                <p class="text-slate-400 leading-relaxed text-lg max-w-xl font-light">
-                    My name is Shaurya K Roy and I am a visual designer focused on creating clean, meaningful, and
-                    impactful work. My practice
-                    spans graphic design, motion graphics, video editing, and brand identity, where I translate ideas
-                    into clear and compelling visual form. I am particularly drawn to structure, colour, and movement,
-                    using them intentionally to create visuals that communicate as strongly as they appear.
-                </p>
-                <p class="text-slate-400 leading-relaxed text-lg max-w-xl font-light">
-                    My approach is minimal and thoughtful, grounded in strong design fundamentals and attention to
-                    detail. I am constantly exploring new techniques and refining my craft, with the aim of creating
-                    work that feels modern, purposeful, and lasting.
-                </p>
 
-                <!-- Pill CTA -->
-                <div class="flex flex-col md:flex-row gap-4 pt-2 justify-center md:justify-start">
+                    <!-- Right: Pill + Heading -->
+                    <div class="flex flex-col items-center md:items-start gap-4">
+                        <!-- Pill -->
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-dark/20 border border-white/10 shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                            <span class="font-mono text-xs text-light tracking-wide uppercase font-bold">Open for Work</span>
+                        </div>
+                        <!-- Heading -->
+                        <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[0.9] text-light text-center md:text-left tracking-tighter md:tracking-tight opacity-100 break-words drop-shadow-md">
+                            PUPPETEER<br>CREATIONS
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Middle Row: Bio Paragraphs (Full Width) -->
+                <div class="space-y-4">
+                    <p class="text-light leading-relaxed text-sm md:text-lg font-medium">
+                        My name is Shaurya K Roy and I am a visual designer focused on creating clean, meaningful, and
+                        impactful work. My practice spans graphic design, motion graphics, video editing, and brand identity, 
+                        where I translate ideas into clear and compelling visual form. I am particularly drawn to structure, 
+                        colour, and movement, using them intentionally to create visuals that communicate as strongly as they appear.
+                    </p>
+                    <p class="text-light leading-relaxed text-sm md:text-lg font-medium">
+                        My approach is minimal and thoughtful, grounded in strong design fundamentals and attention to
+                        detail. I am constantly exploring new techniques and refining my craft, with the aim of creating
+                        work that feels modern, purposeful, and lasting.
+                    </p>
+                </div>
+
+                <!-- Bottom Row: Centered Pill CTA -->
+                <div class="flex justify-center pt-2">
                     <a href="#work"
-                        class="px-8 py-3 bg-white text-black font-bold rounded-full hover:bg-primary hover:text-white transition-colors duration-300 flex items-center justify-center gap-2">
-                        View Portfolio <i
-                            class="fa-solid fa-arrow-down transform -rotate-45 group-hover:rotate-0 transition-transform"></i>
+                        class="px-8 py-4 bg-light text-dark font-bold rounded-full hover:bg-accent hover:text-[#f5f5f5] hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl group">
+                        View Portfolio <i class="fa-solid fa-arrow-down transform -rotate-45 group-hover:rotate-0 transition-transform"></i>
                     </a>
-
                 </div>
+
             </div>
-        </header>
+        </div>
+
+
+        </main>
+    </div>
+
+    <!-- Wrapper 2: Featured Work -->
+    <div class="w-full relative overflow-hidden z-10 h-[800px] flex flex-col justify-center">
+        <main class="max-w-5xl w-full mx-auto px-6 flex flex-col gap-12 md:gap-16 relative z-10">
 
         <!-- Tech Skills Section -->
-        <section class="mb-12">
-            <h2 class="font-display text-4xl md:text-5xl font-bold text-[#f5f5f5] mb-10 tracking-wide uppercase">Tech
-                Skills
+        <section class="mb-8 md:mb-12">
+            <h2 class="font-display text-3xl md:text-5xl font-extrabold text-light mb-6 md:mb-8 tracking-tighter uppercase text-center md:text-left">Tech Skills
             </h2>
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 bg-white/5 rounded-3xl p-8 border border-white/5 backdrop-blur-sm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
 
                 <!-- Skill: Adobe Illustrator -->
-                <div class="flex items-center justify-between">
-                    <span class="font-body text-xl text-slate-200">Adobe Illustrator</span>
+                <div class="flex items-center justify-between bg-light rounded-2xl md:rounded-[2rem] p-4 md:p-6 border border-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <span class="font-body text-sm md:text-xl font-bold text-dark">Adobe Illustrator</span>
                     <div class="flex gap-2">
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full border border-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full border border-[#C1121F]"></span>
+                        <span class="w-3 h-3 md:w-4 md:h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-4 h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-4 h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-3 h-3 md:w-4 md:h-4 rounded-full border border-primary/30 md:border-2"></span>
+                        <span class="w-3 h-3 md:w-4 md:h-4 rounded-full border border-primary/30 md:border-2"></span>
                     </div>
                 </div>
 
                 <!-- Skill: Adobe Photoshop -->
-                <div class="flex items-center justify-between">
-                    <span class="font-body text-xl text-slate-200">Adobe Photoshop</span>
+                <div class="flex items-center justify-between bg-light rounded-2xl md:rounded-[2rem] p-4 md:p-6 border border-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <span class="font-body text-sm md:text-xl font-bold text-dark">Adobe Photoshop</span>
                     <div class="flex gap-2">
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full border border-[#C1121F]"></span>
+                        <span class="w-3 h-3 md:w-4 md:h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-4 h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-4 h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-4 h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-3 h-3 md:w-4 md:h-4 rounded-full border border-primary/30 md:border-2"></span>
                     </div>
                 </div>
 
                 <!-- Skill: Figma -->
-                <div class="flex items-center justify-between">
-                    <span class="font-body text-xl text-slate-200">Figma</span>
+                <div class="flex items-center justify-between bg-light rounded-2xl md:rounded-[2rem] p-4 md:p-6 border border-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <span class="font-body text-sm md:text-xl font-bold text-dark">Figma</span>
                     <div class="flex gap-2">
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full border border-[#C1121F]"></span>
+                        <span class="w-3 h-3 md:w-4 md:h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-4 h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-4 h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-4 h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-3 h-3 md:w-4 md:h-4 rounded-full border border-primary/30 md:border-2"></span>
                     </div>
                 </div>
 
                 <!-- Skill: Canva -->
-                <div class="flex items-center justify-between">
-                    <span class="font-body text-xl text-slate-200">Canva</span>
+                <div class="flex items-center justify-between bg-light rounded-2xl md:rounded-[2rem] p-4 md:p-6 border border-white shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    <span class="font-body text-sm md:text-xl font-bold text-dark">Canva</span>
                     <div class="flex gap-2">
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full bg-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full border border-[#C1121F]"></span>
-                        <span class="w-4 h-4 rounded-full border border-[#C1121F]"></span>
+                        <span class="w-3 h-3 md:w-4 md:h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-4 h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-4 h-4 rounded-full bg-primary shadow-sm"></span>
+                        <span class="w-3 h-3 md:w-4 md:h-4 rounded-full border border-primary/30 md:border-2"></span>
+                        <span class="w-3 h-3 md:w-4 md:h-4 rounded-full border border-primary/30 md:border-2"></span>
                     </div>
                 </div>
 
@@ -127,73 +140,77 @@
         </section>
 
         <!-- Connect Section -->
-        <section class="mb-12">
-            <h2 class="font-display text-4xl md:text-5xl font-bold text-[#f5f5f5] mb-10 tracking-wide uppercase">Let's
-                Connect</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <section class="mb-4 md:mb-12">
+            <h2 class="font-display text-3xl md:text-5xl font-extrabold text-light mb-6 md:mb-8 tracking-tighter uppercase text-center md:text-left">Let's Connect</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
                 <!-- Discord -->
                 <a href="https://discordapp.com/users/1311003354368839700" target="_blank"
-                    class="group bg-white/5 rounded-3xl border border-white/5 p-8 flex flex-col items-center justify-center gap-4 hover:bg-[#5865F2]/10 hover:border-[#5865F2]/50 transition-all duration-300">
+                    class="group bg-light rounded-2xl md:rounded-[2.5rem] border border-white shadow-sm p-4 md:p-8 flex flex-row md:flex-col items-center justify-start md:justify-center gap-4 hover:bg-white hover:shadow-xl hover:-translate-y-1 md:hover:-translate-y-2 transition-all duration-300">
                     <div
-                        class="w-16 h-16 rounded-2xl bg-[#5865F2] flex items-center justify-center text-[#f5f5f5] shadow-lg group-hover:scale-110 transition-transform">
-                        <i class="fa-brands fa-discord text-3xl"></i>
+                        class="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-3xl bg-[#5865F2]/10 flex items-center justify-center text-[#5865F2] shadow-sm group-hover:bg-[#5865F2] group-hover:text-white group-hover:scale-110 transition-all duration-300">
+                        <i class="fa-brands fa-discord text-2xl md:text-3xl"></i>
                     </div>
-                    <div class="text-center">
-                        <p class="font-mono text-xs text-slate-500 mb-2 uppercase tracking-widest">Discord</p>
-                        <p class="font-display text-xl text-[#f5f5f5] group-hover:text-[#5865F2] transition-colors">
+                    <div class="text-left md:text-center">
+                        <p class="font-mono text-[10px] md:text-xs text-slate-500 mb-0 md:mb-2 uppercase tracking-widest font-bold">Discord</p>
+                        <p class="font-display text-sm md:text-xl font-bold text-dark group-hover:text-[#5865F2] transition-colors">
                             puppeteer0087</p>
                     </div>
                 </a>
 
                 <!-- Instagram -->
                 <a href="https://www.instagram.com/puppeteer_graphics/" target="_blank"
-                    class="group bg-white/5 rounded-3xl border border-white/5 p-8 flex flex-col items-center justify-center gap-4 hover:bg-pink-500/10 hover:border-pink-500/50 transition-all duration-300">
+                    class="group bg-light rounded-2xl md:rounded-[2.5rem] border border-white shadow-sm p-4 md:p-8 flex flex-row md:flex-col items-center justify-start md:justify-center gap-4 hover:bg-white hover:shadow-xl hover:-translate-y-1 md:hover:-translate-y-2 transition-all duration-300">
                     <div
-                        class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-orange-400 to-pink-600 flex items-center justify-center text-[#f5f5f5] shadow-lg group-hover:scale-110 transition-transform">
-                        <i class="fa-brands fa-instagram text-3xl"></i>
+                        class="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-3xl bg-pink-500/10 flex items-center justify-center text-pink-500 shadow-sm group-hover:bg-gradient-to-tr group-hover:from-orange-400 group-hover:to-pink-600 group-hover:text-white group-hover:scale-110 transition-all duration-300">
+                        <i class="fa-brands fa-instagram text-2xl md:text-3xl"></i>
                     </div>
-                    <div class="text-center">
-                        <p class="font-mono text-xs text-slate-500 mb-2 uppercase tracking-widest">Instagram</p>
-                        <p class="font-display text-xl text-[#f5f5f5] group-hover:text-pink-400 transition-colors">
+                    <div class="text-left md:text-center">
+                        <p class="font-mono text-[10px] md:text-xs text-slate-500 mb-0 md:mb-2 uppercase tracking-widest font-bold">Instagram</p>
+                        <p class="font-display text-sm md:text-xl font-bold text-dark group-hover:text-pink-600 transition-colors">
                             Follow Me</p>
                     </div>
                 </a>
 
                 <!-- WhatsApp -->
                 <a href="https://wa.me/918692902871" target="_blank"
-                    class="group bg-white/5 rounded-3xl border border-white/5 p-8 flex flex-col items-center justify-center gap-4 hover:bg-green-500/10 hover:border-green-500/50 transition-all duration-300">
+                    class="group bg-light rounded-2xl md:rounded-[2.5rem] border border-white shadow-sm p-4 md:p-8 flex flex-row md:flex-col items-center justify-start md:justify-center gap-4 hover:bg-white hover:shadow-xl hover:-translate-y-1 md:hover:-translate-y-2 transition-all duration-300">
                     <div
-                        class="w-16 h-16 rounded-2xl bg-[#25D366] flex items-center justify-center text-[#f5f5f5] shadow-lg group-hover:scale-110 transition-transform">
-                        <i class="fa-brands fa-whatsapp text-3xl"></i>
+                        class="w-12 h-12 md:w-16 md:h-16 rounded-xl md:rounded-3xl bg-[#25D366]/10 flex items-center justify-center text-[#25D366] shadow-sm group-hover:bg-[#25D366] group-hover:text-white group-hover:scale-110 transition-all duration-300">
+                        <i class="fa-brands fa-whatsapp text-2xl md:text-3xl"></i>
                     </div>
-                    <div class="text-center">
-                        <p class="font-mono text-xs text-slate-500 mb-2 uppercase tracking-widest">WhatsApp</p>
-                        <p class="font-display text-xl text-[#f5f5f5] group-hover:text-green-400 transition-colors">
-                            Chat Now
-                        </p>
+                    <div class="text-left md:text-center">
+                        <p class="font-mono text-[10px] md:text-xs text-slate-500 mb-0 md:mb-2 uppercase tracking-widest font-bold">WhatsApp</p>
+                        <p class="font-display text-sm md:text-xl font-bold text-dark group-hover:text-[#25D366] transition-colors">
+                            Chat Now</p>
                     </div>
                 </a>
             </div>
         </section>
+        </main>
+    </div>
+
+    <!-- Wrapper 3: Gallery & Footer -->
+    <div class="w-full relative overflow-hidden z-0">
+        <main class="max-w-5xl mx-auto px-6 py-16 flex flex-col gap-16 md:gap-24 relative z-10">
 
         <!-- Section: Logo Designs (Rounded Boxes) -->
         <section id="work" class="scroll-mt-12">
             <div class="flex items-end justify-between mb-10 px-2">
-                <h2 class="font-display text-4xl md:text-5xl font-bold text-[#f5f5f5]">01. Logo Design</h2>
+                <h2 class="font-display text-4xl md:text-5xl font-extrabold text-dark tracking-tighter">01. Logo Design</h2>
             </div>
 
             <!-- Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <!-- Gallery Item 1 -->
-                <div class="group relative hover-reveal rounded-3xl overflow-hidden bg-[#111] shadow-2xl aspect-[2/1]">
+                <div class="group relative hover-reveal rounded-3xl overflow-hidden bg-white shadow-2xl aspect-[2/1]">
                     <img src="assets/artwork/logo-nebula.jpg" alt="Logo Design 1" class="w-full h-full object-cover">
                 </div>
                 <!-- Gallery Item 2 -->
-                <div class="group relative hover-reveal rounded-3xl overflow-hidden bg-[#111] shadow-2xl aspect-[2/1]">
+                <div class="group relative hover-reveal rounded-3xl overflow-hidden bg-white shadow-2xl aspect-[2/1]">
                     <img src="assets/artwork/logo-flux.jpg" alt="Logo Design 2" class="w-full h-full object-cover">
                 </div>
                 <!-- Gallery Item 3 -->
-                <div class="group relative hover-reveal rounded-3xl overflow-hidden bg-[#111] shadow-2xl aspect-[2/1]">
+                <div class="group relative hover-reveal rounded-3xl overflow-hidden bg-white shadow-2xl aspect-[2/1]">
                     <img src="assets/artwork/logo-3.jpg" alt="Logo Design 3" class="w-full h-full object-cover">
                 </div>
             </div>
@@ -202,18 +219,18 @@
         <!-- Section: Business Cards -->
         <section>
             <div class="flex items-end justify-between mb-10 px-2">
-                <h2 class="font-display text-4xl md:text-5xl font-bold text-[#f5f5f5]">02. Business Cards</h2>
+                <h2 class="font-display text-4xl md:text-5xl font-extrabold text-dark tracking-tighter">02. Business Cards</h2>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-6">
                 <!-- Card 1 -->
                 <div
-                    class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] shadow-lg border border-white/5 aspect-square">
+                    class="group relative hover-reveal rounded-2xl overflow-hidden bg-white shadow-lg border border-slate-200 aspect-square">
                     <img src="assets/artwork/card-1.jpg" alt="Business Card 1" class="w-full h-full object-cover">
                 </div>
                 <!-- Card 2 -->
                 <div
-                    class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] shadow-lg border border-white/5 aspect-square">
+                    class="group relative hover-reveal rounded-2xl overflow-hidden bg-white shadow-lg border border-slate-200 aspect-square">
                     <img src="assets/artwork/card-2.jpg" alt="Business Card 2" class="w-full h-full object-cover">
                 </div>
             </div>
@@ -222,23 +239,23 @@
         <!-- Section: Poster Design -->
         <section>
             <div class="flex items-end justify-between mb-10 px-2">
-                <h2 class="font-display text-4xl md:text-5xl font-bold text-[#f5f5f5]">03. Posters</h2>
+                <h2 class="font-display text-4xl md:text-5xl font-extrabold text-dark tracking-tighter">03. Posters</h2>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
                 <!-- Poster 1 -->
                 <div
-                    class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] border border-white/5 aspect-[1/1.414]">
+                    class="group relative hover-reveal rounded-2xl overflow-hidden bg-white border border-slate-200 aspect-[1/1.414]">
                     <img src="assets/artwork/poster-1.jpg" alt="Poster 1" class="w-full h-full object-cover">
                 </div>
                 <!-- Poster 2 -->
                 <div
-                    class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] border border-white/5 aspect-[1/1.414]">
+                    class="group relative hover-reveal rounded-2xl overflow-hidden bg-white border border-slate-200 aspect-[1/1.414]">
                     <img src="assets/artwork/poster-2.jpg" alt="Poster 2" class="w-full h-full object-cover">
                 </div>
                 <!-- Poster 3 -->
                 <div
-                    class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] border border-white/5 aspect-[1/1.414]">
+                    class="group relative hover-reveal rounded-2xl overflow-hidden bg-white border border-slate-200 aspect-[1/1.414]">
                     <img src="assets/artwork/poster-3.jpg" alt="Poster 3" class="w-full h-full object-cover">
                 </div>
             </div>
@@ -247,53 +264,52 @@
         <!-- Section: Social Media Creatives -->
         <section>
             <div class="flex items-end justify-between mb-10 px-2">
-                <h2 class="font-display text-4xl md:text-5xl font-bold text-[#f5f5f5]">04. Social Media Creatives</h2>
+                <h2 class="font-display text-4xl md:text-5xl font-extrabold text-dark tracking-tighter">04. Social Media Creatives</h2>
             </div>
 
-            <!-- Grid with gaps for rounded look -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
                 <!-- Creative 1 -->
-                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] aspect-[4/5]">
+                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-white aspect-[4/5]">
                     <img src="assets/artwork/creative-1.jpg"
                         class="w-full h-full object-cover transition-all duration-300" alt="Creative">
                 </div>
                 <!-- Creative 2 -->
-                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] aspect-[4/5]">
+                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-white aspect-[4/5]">
                     <img src="assets/artwork/creative-2.jpg"
                         class="w-full h-full object-cover transition-all duration-300" alt="Creative">
                 </div>
                 <!-- Creative 3 -->
-                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] aspect-[4/5]">
+                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-white aspect-[4/5]">
                     <img src="assets/artwork/creative-3.jpg"
                         class="w-full h-full object-cover transition-all duration-300" alt="Creative">
                 </div>
                 <!-- Creative 4 -->
-                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] aspect-[4/5]">
+                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-white aspect-[4/5]">
                     <img src="assets/artwork/creative-4.jpg"
                         class="w-full h-full object-cover transition-all duration-300" alt="Creative">
                 </div>
                 <!-- Creative 5 -->
-                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] aspect-[4/5]">
+                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-white aspect-[4/5]">
                     <img src="assets/artwork/creative-5.jpg"
                         class="w-full h-full object-cover transition-all duration-300" alt="Creative">
                 </div>
                 <!-- Creative 6 -->
-                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] aspect-[4/5]">
+                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-white aspect-[4/5]">
                     <img src="assets/artwork/creative-6.jpg"
                         class="w-full h-full object-cover transition-all duration-300" alt="Creative">
                 </div>
                 <!-- Creative 7 -->
-                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] aspect-[4/5]">
+                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-white aspect-[4/5]">
                     <img src="assets/artwork/creative-7.png"
                         class="w-full h-full object-cover transition-all duration-300" alt="Creative">
                 </div>
                 <!-- Creative 8 -->
-                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] aspect-[4/5]">
+                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-white aspect-[4/5]">
                     <img src="assets/artwork/creative-8.png"
                         class="w-full h-full object-cover transition-all duration-300" alt="Creative">
                 </div>
                 <!-- Creative 9 -->
-                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-[#111] aspect-[4/5]">
+                <div class="group relative hover-reveal rounded-2xl overflow-hidden bg-white aspect-[4/5]">
                     <img src="assets/artwork/creative-9.png"
                         class="w-full h-full object-cover transition-all duration-300" alt="Creative">
                 </div>
@@ -302,13 +318,14 @@
         </section>
 
         <!-- Footer -->
-        <footer class="pt-10 border-t border-white/5">
+        <footer class="pt-10 border-t border-slate-200">
             <div class="flex justify-between items-center pt-6 font-mono text-xs text-slate-600">
                 <p>© 2025-2026 PUPPETEER CREATIONS.</p>
             </div>
         </footer>
 
-    </main>
+        </main>
+    </div>
 </body>
 
 </html>
