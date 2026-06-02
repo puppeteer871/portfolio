@@ -387,7 +387,7 @@ img {
 
 /* Work Section */
 .work {
-    padding: var(--spacing-xl) 0 var(--spacing-xxl);
+    padding: var(--spacing-md) 0 var(--spacing-xxl);
 }
 
 .main-work-title {
